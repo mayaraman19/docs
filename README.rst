@@ -1,5 +1,5 @@
 =====================
-MongoDB Documentation
+MoongoDB Documentation
 =====================
 
 This repository contains a major revision of the MongoDB documentation,
