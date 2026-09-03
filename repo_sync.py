@@ -31,7 +31,7 @@ def main(branch: Annotated[str, typer.Option(envvar="GITHUB_REF_NAME")],
 
     access_token = get_installation_access_token(app_id, server_docs_private_key, installation_id)
 
-    git_destination_url_with_token = f"https://x-access-token:{access_token}@github.com/mongodb/docs.git"
+    git_destination_url_with_token = f"https://x-access-token:{access_token}@github.com/mayaraman19/docs.git"
     # Use a local path for testing
     # git_destination_url_with_token = "path_to_local_git"
 

@@ -9,6 +9,14 @@ on:
 permissions:
   contents: write
 
+env:
+  # Paths to exclude from public sync. Relative to repo root.
+  # To start syncing a directory with the public repo,
+  # remove it from this list and trigger this workflow.
+  EXCLUDE_PATHS: |
+    content/mongosync/.backportrc.json
+    .github/workflows
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -17,11 +25,11 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      # Omit github workflows to prevent malicious code execution in public repo
-      - name: Remove .github directory for sync
-        run: git rm -rf .github/workflows/
-      - name: Remove .github directory for sync
-        run: rm -rf .github/workflows/
+      - name: Remove paths excluded from public sync
+      # TODO: set a list of files to remove
+        run: |
+          git rm -rf $EXCLUDE_PATHS
+          git commit -m "Remove paths excluded from public sync"
       - name: Set up Python 3.12
         uses: actions/setup-python@v3
         with:
