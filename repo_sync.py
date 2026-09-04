@@ -38,7 +38,7 @@ def main(branch: Annotated[str, typer.Option(envvar="GITHUB_REF_NAME")],
     # Taken from SO: https://stackoverflow.com/a/69979203
     subprocess.run(["git", "config", "--unset-all", "http.https://github.com/.extraheader"], check=True)
     # Push the code upstream
-    subprocess.run(["git", "push", git_destination_url_with_token, branch], check=True)
+    subprocess.run(["git", "push", "--force", git_destination_url_with_token, branch], check=True)
 
 
 if __name__ == "__main__":
