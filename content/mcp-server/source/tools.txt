@@ -104,6 +104,15 @@ on the {+atlas-managed-mcp-server+} and {+local-mcp+}, respectively.
      -
      - :icon-fa5:`check`
 
+   * - ``atlas-get-regions``
+     - Returns the supported Atlas regions for a cloud
+       provider (``AWS``, ``AZURE``, or ``GCP``), including
+       each region's code and human-readable location. Use
+       this tool to resolve region names or codes before
+       creating or upgrading a cluster.
+     - :icon-fa5:`check`
+     - :icon-fa5:`check`
+
    * - ``atlas-upgrade-cluster``
      - Supports the following Atlas cluster upgrades:
 
@@ -113,6 +122,20 @@ on the {+atlas-managed-mcp-server+} and {+local-mcp+}, respectively.
 
        You can optionally specify the target
        ``region`` and ``provider``.
+
+       For a dedicated cluster, you can scale the
+       cluster to a different M10–M80 instance size and
+       update its compute autoscaling settings. Specify
+       at least one of the following options: 
+
+       - The new instance size
+       - Whether to enable compute autoscaling
+       - The minimum or maximum instance size for autoscaling
+       
+       Scaling applies to electable and read-only nodes.
+       This tool doesn't scale analytics nodes,
+       multi-shard clusters, or clusters whose regions
+       use different instance sizes.
      - :icon-fa5:`check`
      - :icon-fa5:`check`
 

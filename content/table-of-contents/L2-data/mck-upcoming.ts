@@ -172,6 +172,26 @@ const mckUpcoming: TocItem[] = [
         url: '/docs/kubernetes/:version/tutorial/deploy-om-multi-cluster',
       },
       {
+        label: 'Back Up the Application Database',
+        contentSite: 'mck',
+        url: '/docs/kubernetes/:version/tutorial/om-appdb-backup',
+      },
+      {
+        label: 'Deploy with an External Application Database',
+        contentSite: 'mck',
+        url: '/docs/kubernetes/:version/tutorial/deploy-om-external-appdb',
+      },
+      {
+        label: 'Migrate to an External Application Database',
+        contentSite: 'mck',
+        url: '/docs/kubernetes/:version/tutorial/migrate-appdb-to-external',
+      },
+      {
+        label: 'Return to an Internal Application Database',
+        contentSite: 'mck',
+        url: '/docs/kubernetes/:version/tutorial/migrate-appdb-to-internal',
+      },
+      {
         label: 'Upgrade',
         contentSite: 'mck',
         url: '/docs/kubernetes/:version/tutorial/upgrade-om-version',
@@ -936,11 +956,6 @@ const mckUpcoming: TocItem[] = [
   {
     label: 'Deploy MongoDB Community on Kubernetes',
     url: 'https://github.com/mongodb/mongodb-kubernetes/tree/master/docs/mongodbcommunity',
-    isExternal: true,
-  },
-  {
-    label: 'MongoDB Enterprise Kubernetes Operator (Deprecated)',
-    url: 'https://www.mongodb.com/docs/kubernetes-operator/v1.33',
     isExternal: true,
   },
 ];

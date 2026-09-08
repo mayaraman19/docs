@@ -21,6 +21,11 @@ Improvements
 - Updates {+mongosh+} to 2.9.1 for all supported environments.
 - Updates the bundled MongoDB Java Driver from 4.9.1 to 5.4.0.
   This driver update removes support for MongoDB Server 3.6.
+- Uses ``majority`` write concern by default for durable writes to
+  the application database and to backup metadata stores, improving
+  durability on 5-node and 7-node deployments. For write concern
+  details for backing databases, see :ref:`write concern for backing
+  databases <backing-database-write-concern>`.
 - Improves hybrid-mode deployments by ensuring agent binary
   download URLs correctly use the hybrid base URL when available.
 - Adds support for OIDC authentication to AppDB and all backing
@@ -349,7 +354,10 @@ Improvements
 
 - Updates the {+mdbagent+} to
   :ref:`108.0.23.8997-1 <mongodb-108.0.23.8997-1>`.
-- Adds {+mdbagent+} support for MongoDB Server 8.3.
+- Enables MongoDB Server 8.3 for production use for MongoDB
+  deployments managed by |onprem| 8.0. MongoDB 8.3 is not supported
+  for |onprem| 8.0 backing databases, including the Application
+  Database.
 - Adds the following platform support for the {+mdbagent+}:
 
   - Publishes dedicated Ubuntu 20.04 deb packages.
@@ -602,8 +610,6 @@ Improvements
 
 - Updates the {+mdbagent+} to :ref:`108.0.20.8953-1 <mongodb-108.0.20.8953-1>`.
 - Supports :dbtools:`MongoDB Database Tools 100.14.1 </release-notes/dbtools-100.14.1-changelog/>`.
-- Releases MongoDB Shell `2.5.10 <https://github.com/mongodb-js/mongosh/releases/tag/v2.5.10>`__
-  and `2.6.0 <https://github.com/mongodb-js/mongosh/releases/tag/v2.6.0>`__ to |cloud-short|.
 - Releases MongoDB Shell `2.6.0 <https://github.com/mongodb-js/mongosh/releases/tag/v2.6.0>`__ to |onprem|.
 - Updates JDK to `jdk-21.0.10+7 <https://adoptium.net/temurin/release-notes/?version=jdk-21.0.10+7>`__.
 - Adds the ``description`` field to the ``activityFeed.json`` file in the Diagnostics archive.
