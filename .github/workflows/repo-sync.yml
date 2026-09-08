@@ -16,6 +16,7 @@ env:
   EXCLUDE_PATHS: |
     content/mongosync/.backportrc.json
     .github/workflows
+    content/*/upcoming/
 
 jobs:
   deploy:
