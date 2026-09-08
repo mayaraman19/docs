@@ -5,7 +5,7 @@ Groom Priority
 ==============
 
 .. meta::
-   :description: View and manage the status of backup jobs and blockstores in Ops Manager. Schedule groom and integrity check jobs, or move blocks between blockstores.
+   :description: View and manage the status of all backup jobs and blockstores in Ops Manager, including grooming, integrity checks, and moving blocks between blockstores.
 
 .. default-domain:: mongodb
 
@@ -39,7 +39,7 @@ their blockstores. |onprem| maintains a blockstore using three jobs:
        space. This removes any dead blocks that only previously expired
        snapshots used.
      - Runs when the percentage of living block bytes drops
-       to drops below a given threshold.
+       below a given threshold.
 
        To learn more, see :ref:`Grooms <grooms-page>`.
 

@@ -1,3 +1,29 @@
+.. _atlas-sp-20260903:
+
+3 September 2026 Release
+------------------------
+
+- Adds support for vertical autoscaling. To learn more, see
+  :ref:`atlas-sp-autoscaling`.
+- Adds support for ``us-west1`` in {+gcp+} and ``northeurope``,
+  ``eastasia``, and ``southeastasia`` in |azure| regions.
+- Improves change stream source initial sync so that it can copy
+  collections whose ``_id`` values span multiple BSON types, such as
+  ``ObjectId``, ``string``, ``numeric``, ``date``, and ``UUID``. To
+  learn more, see
+  :ref:`atlas-sp-multi-collection-initial-sync`.
+
+.. _atlas-sp-20260901:
+
+1 September 2026 Release
+------------------------
+
+- Updates the ``$iceberg`` aggregation stage to write files to
+  {+aws+} S3 using the ``s3://`` scheme instead of the ``s3a://``
+  scheme, which increases compatibility with external query
+  engines. To learn more, see
+  :ref:`$iceberg <atlas-sp-agg-iceberg>`.
+
 .. _atlas-sp-20260827:
 
 27 August 2026 Release
