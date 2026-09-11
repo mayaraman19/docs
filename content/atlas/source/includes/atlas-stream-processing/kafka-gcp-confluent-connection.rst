@@ -61,7 +61,7 @@ To create a {+gcp+} Confluent Private Link connection to use in your
 
    .. step:: Click :guilabel:`Add`.
 
-   .. step:: Request a connection to your cloud provider.
+   .. step:: Create an {+service+} Private Endpoint.
 
       .. list-table::
          :widths: 20 80
@@ -129,4 +129,4 @@ To create a {+gcp+} Confluent Private Link connection to use in your
 	    
    .. step:: Create the Atlas-side connection.
 
-      .. include:: /includes/steps-create-sp-kafka-pl-atlas-side-connection.rst
+      .. include:: /includes/atlas-stream-processing/create-kafka-pl-atlas-side.rst

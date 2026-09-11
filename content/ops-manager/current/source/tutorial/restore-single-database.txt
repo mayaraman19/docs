@@ -2,6 +2,9 @@
 Restore a Single Database or Collection
 =======================================
 
+.. meta::
+   :description: Restore a single database or collection using Queryable Backup and `mongodump` and `mongorestore` tools.
+
 .. default-domain:: mongodb
 
 .. contents:: On this page
@@ -38,7 +41,7 @@ instance via |mms|-provided tunnel [#manual-connect]_.
 
 .. note::
 
-   If the Daemon runs without access to the internet, see
+   If the Daemon runs without access to the Internet, see
    :doc:`/tutorial/configure-local-mode` to install the appropriate
    binaries.
 
