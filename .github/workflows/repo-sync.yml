@@ -17,6 +17,10 @@ env:
     content/mongosync/.backportrc.json
     .github/workflows
 
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
