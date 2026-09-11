@@ -1,0 +1,3 @@
+content/mongosync/.backportrc.json
+.github/workflows
+content/*/upcoming
