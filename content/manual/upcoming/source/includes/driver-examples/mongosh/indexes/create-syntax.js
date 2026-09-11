@@ -1,1 +1,0 @@
-db.collection.createIndex( <keys>, <options>, <commitQuorum> )

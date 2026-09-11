@@ -1,7 +1,0 @@
-.. _scala-encrypt:
-
-.. sharedinclude:: dbx/encrypt-fields-upcoming.rst
-
-   .. replacement:: driver-specific-content
-
-      .. include:: /includes/security/crypt-library-version.rst

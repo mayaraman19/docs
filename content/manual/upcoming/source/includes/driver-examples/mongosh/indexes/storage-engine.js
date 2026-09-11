@@ -1,1 +1,0 @@
-storageEngine: { <storage-engine-name>: <options> }
