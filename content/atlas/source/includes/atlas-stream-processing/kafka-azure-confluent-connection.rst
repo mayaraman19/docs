@@ -47,7 +47,7 @@ To create a {+azure+} Confluent Private Link connection to use in your
 
          You need to provide your ``azureSubscriptionId``.
 
-   .. step:: Request a connection to your cloud provider.
+   .. step:: Create an {+service+} Private Endpoint.
 
       .. list-table::
          :widths: 20 80
@@ -113,4 +113,4 @@ To create a {+azure+} Confluent Private Link connection to use in your
 
    .. step:: Create the Atlas-side connection.
 
-      .. include:: /includes/steps-create-sp-kafka-pl-atlas-side-connection.rst
+      .. include:: /includes/atlas-stream-processing/create-kafka-pl-atlas-side.rst

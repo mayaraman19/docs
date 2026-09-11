@@ -807,7 +807,7 @@ export const toc: L1TocItem[] = [
               {
                 label: 'Delete',
                 contentSite: 'docs',
-                url: '/docs/:version/tutorial/remove-documents',
+                url: '/docs/:version/tutorial/delete-documents',
               },
               {
                 label: 'SQL to MongoDB',
@@ -9174,6 +9174,11 @@ export const toc: L1TocItem[] = [
                     label: 'Get Started',
                     contentSite: 'cloud-docs',
                     url: '/docs/atlas/atlas-stream-processing/quickstart',
+                  },
+                  {
+                    label: 'Operations Guide',
+                    contentSite: 'cloud-docs',
+                    url: '/docs/atlas/atlas-stream-processing/ops-guide',
                   },
                   {
                     label: 'Tier Sizing Guide',
